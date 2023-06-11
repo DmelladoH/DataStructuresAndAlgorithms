@@ -5,9 +5,15 @@ export class Queue<T> {
   head?: Node<T>
   tail?: Node<T>
 
-  constructor () {
+  constructor (headVal?: T) {
     this.size = 0
-    this.head = this.tail = undefined
+    let newHead: Node<T> | undefined
+
+    if (headVal !== undefined) {
+      newHead = { val: headVal }
+    }
+
+    this.head = this.tail = newHead
   }
 
   enqueue (elem: T): void {

@@ -1,4 +1,4 @@
-import { type BTreeNode } from '../../../dataStructures/TreeNode'
+import { type BTreeNode } from '../../../dataStructures/treeNode'
 
 export function getTreePreOrder<T> (TreeRoot: BTreeNode<T>): T[] {
   const path: T[] = []
