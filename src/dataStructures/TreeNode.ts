@@ -1,5 +1,5 @@
 export interface BTreeNode<T> {
   val: T
-  left: BTreeNode<T> | undefined
-  right: BTreeNode<T> | undefined
+  left?: BTreeNode<T>
+  right?: BTreeNode<T>
 }
