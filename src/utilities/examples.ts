@@ -46,6 +46,79 @@ export const BTree: BTreeNode<number> = {
   }
 }
 
+export const BTree2: BTreeNode<number> = {
+  val: 4,
+  left: {
+    val: 1,
+    left: {
+      val: 2,
+      left: {
+        val: 6,
+        left: undefined,
+        right: undefined
+      },
+      right: undefined
+    },
+    right: {
+      val: 9,
+      left: undefined,
+      right: undefined
+    }
+  },
+  right: {
+    val: 6,
+    left: {
+      val: 2,
+      left: undefined,
+      right: {
+        val: 1,
+        left: undefined,
+        right: undefined
+      }
+    },
+    right: {
+      val: 111,
+      left: undefined,
+      right: undefined
+    }
+  }
+}
+
+export const tree1: BTreeNode<number> = {
+  val: 1,
+  left: {
+    val: 2,
+    left: {
+      val: 3,
+      left: undefined,
+      right: undefined
+    },
+    right: {
+      val: 4,
+      left: undefined,
+      right: undefined
+    }
+  },
+  right: {
+    val: 5,
+    left: undefined,
+    right: undefined
+  }
+}
+
+export const tree2: BTreeNode<number> = {
+  val: 2,
+  left: {
+    val: 3,
+    left: undefined,
+    right: undefined
+  },
+  right: {
+    val: 4,
+    left: undefined,
+    right: undefined
+  }
+}
 interface Person {
   name: string
   age: number
